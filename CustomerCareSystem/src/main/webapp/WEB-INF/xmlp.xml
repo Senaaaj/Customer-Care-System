@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+     <servlet>
+     	<servlet-name>InsertServletp</servlet-name>
+     	<servlet-class>customercarePackage.InsertServletp</servlet-class>
+     </servlet>
+     
+     
+     <servlet-mapping>
+     	<servlet-name>InsertServletp</servlet-name>
+     	<url-pattern>/InsertServletp</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>GetALLServletp</servlet-name>
+     	<servlet-class>customercarePackage.GetALLServletp</servlet-class>
+     </servlet>
+     
+     
+     <servlet-mapping>
+     	<servlet-name>GetALLServletp</servlet-name>
+     	<url-pattern>/GetALLServletp</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>UpdateServletp</servlet-name>
+     	<servlet-class>customercarePackage.UpdateServletp</servlet-class>
+     </servlet>
+     
+     
+     <servlet-mapping>
+     	<servlet-name>UpdateServletp</servlet-name>
+     	<url-pattern>/UpdateServletp</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>DeleteServletp</servlet-name>
+     	<servlet-class>customercarePackage.DeleteServletp</servlet-class>
+     </servlet>
+     
+     
+     <servlet-mapping>
+     	<servlet-name>DeleteServletp</servlet-name>
+     	<url-pattern>/DeleteServletp</url-pattern>
+     </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+     <servlet>
+     	<servlet-name>raiseTicketServlet</servlet-name>
+     	<servlet-class>raiseTicket.raiseTicketServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>raiseTicketServlet</servlet-name>
+     	<url-pattern>/raiseTicketServlet</url-pattern>
+     </servlet-mapping>
+
+
+	 <servlet>
+     	<servlet-name>ticketGetALLServlet</servlet-name>
+     	<servlet-class>raiseTicket.ticketGetALLServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>ticketGetALLServlet</servlet-name>
+     	<url-pattern>/ticketGetALLServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>TicketUpdateServlet</servlet-name>
+     	<servlet-class>raiseTicket.TicketUpdateServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>TicketUpdateServlet</servlet-name>
+     	<url-pattern>/TicketUpdateServlet</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>TicketDeleteServlet</servlet-name>
+     	<servlet-class>raiseTicket.TicketDeleteServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>TicketDeleteServlet</servlet-name>
+     	<url-pattern>/TicketDeleteServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+</web-app>

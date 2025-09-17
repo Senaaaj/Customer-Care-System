@@ -1,0 +1,121 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  
+  .container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+  }
+  
+  .container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  
+  .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(50% - 20px);
+  }
+  
+  .input-box.full-width {
+    width: 100%;
+  }
+  
+  .details {
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+  }
+  
+  .input-box input,
+  .input-box select,
+  .input-box textarea {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .row {
+    display: flex;
+    gap: 45px;
+    width: 100%;
+  }
+  .button input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button input[type="submit"]:hover {
+    background-color: #884ea0;
+  }
+form .priority-box{
+    margin-top: 22px;
+}
+.priority-box h3{
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+form :where(.priority-options, .priority){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+form .priority{
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+form :where(.priority input, .priority label){
+    cursor: pointer
+
+}
